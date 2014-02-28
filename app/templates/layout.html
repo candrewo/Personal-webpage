@@ -8,7 +8,9 @@
 		<body bgcolor= "#E6E6E6">
 		<header>
 			<div class="container">
-				<h1 class="logo">Christopher Andrew Olegario</h1>
+				{% block div %}
+					<h1 class="logo">Christopher Andrew Olegario{% block title %}{% endblock %}</h1>
+				{% endblock %}
 				<strong><nav>
 					<ul class="menu">
 						<li><a href="{{ url_for('home')}}">Home</a></li>
